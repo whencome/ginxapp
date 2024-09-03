@@ -1,0 +1,12 @@
+.idea/*
+.vscode/*
+#Vendor
+composer.lock
+.buildpath
+.project
+.settings/
+go.sum
+release/*
+upload/*
+Deploy/.env
+Deploy/nsq/nsq/data*

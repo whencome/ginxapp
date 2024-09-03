@@ -1,0 +1,38 @@
+# 日志配置
+log:
+  level: debug
+  output: stdout
+  path: /home/logs/ginxapp/api.log
+  rotation_time: 72h
+  max_keep_time: 720h
+
+# 站点配置
+site:
+  mode : debug
+  port : 8701
+
+# 跨域配置
+cors:
+  is_enabled: true
+  ip_whitelist:
+    - "1.2.3.4"
+  ip_blacklist:
+    - "4.3.2.1"
+
+# redis配置
+redis:
+  addr: 127.0.0.1:6379
+  password:
+  db: 0
+
+# jwt配置
+jwt:
+  signing-key: 'ginxapp'
+  expires-time: 604800
+  buffer-time: 86400
+  issuer: 'ginxapp'
+
+# 定时任务配置
+cron:
+  is_enabled: true
+  log_dir: /home/logs/ginxapp
